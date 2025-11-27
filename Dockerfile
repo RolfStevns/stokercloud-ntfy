@@ -5,6 +5,6 @@ RUN adduser -D appuser
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY Stoker_Scaper.py .
+COPY Stoker_Scraper.py .
 USER appuser
-CMD ["python", "-u", "scraper.py"]
+CMD ["python", "-u", "Stoker_Scraper.py"]

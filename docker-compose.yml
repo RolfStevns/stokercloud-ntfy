@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  stokercloud-scraper:
+  stokercloud-ntfy:
     build: .
-    container_name: stokercloud-scraper
+    container_name: stokercloud-ntfy
     restart: unless-stopped
     environment:
       STOKERCLOUD_LOGIN_URL: "https://stokercloud.dk/v2/dataout2/login.php"
